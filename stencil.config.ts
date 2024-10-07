@@ -17,8 +17,8 @@ export const config: Config = {
     },
     {
       type: 'www',
-      dir: 'docs',
-      serviceWorker: null, // disable service workers
+      serviceWorker: null,
+      baseUrl: 'https://timmy-io.vercel.app/'// disable service workers
     },
   ],
   testing: {
