@@ -1,2 +1,0 @@
-import{p as e,b as t}from"./p-671e4e4d.js";export{s as setNonce}from"./p-671e4e4d.js";import{g as a}from"./p-e1255160.js";var o=()=>{const s=import.meta.url;const t={};if(s!==""){t.resourcesUrl=new URL(".",s).href}return e(t)};o().then((async e=>{await a();return t([["p-da0e01d9",[[1,"my-component",{chatMessages:[32]}]]]],e)}));
-//# sourceMappingURL=botty.esm.js.map

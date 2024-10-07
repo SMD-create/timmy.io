@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 // Route to fetch conversation from external API
 app.get('/api/fetch-conversation', async (req, res) => {
   try {
-    const apiUrl = 'https://chateasy.logbase.io/api/conversation?id=91b455e77f20b34b8b483265cb9ae0629c9bb20ab70db6b59de1db37039b652a&storeId=dazzling-aura.myshopify.com';
+    const apiUrl = 'https://chateasy.logbase.io/api/conversation?id=cdb63a0953cd227918b86be96d56f60d42993f5ff8de771d38adba7cfc1f74ed&storeId=timmy-demo.myshopify.com';
 
     // Fetch data from the external API
     const response = await fetch(apiUrl);
