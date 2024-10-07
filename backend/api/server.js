@@ -4,8 +4,6 @@ import fetch from 'node-fetch';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-// Import cors
-import cors from 'cors';
 
 // Use CORS middleware
 app.use(cors({
