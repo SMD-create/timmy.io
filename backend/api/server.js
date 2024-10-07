@@ -4,8 +4,16 @@ import fetch from 'node-fetch';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+// Import cors
+import cors from 'cors';
 
-app.use(cors({ origin: '*' })); // Allow requests from any origin. You can also set this to 'http://localhost:3334' to limit access.
+// Use CORS middleware
+app.use(cors({
+  origin: 'https://timmy-io-smd-creates-projects.vercel.app', // Specify your frontend's URL
+  methods: ['GET', 'POST'], // Allow specific HTTP methods
+  credentials: true // Allow credentials if needed
+}));
+
 app.use(express.json());
 
 
