@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 
 // Use CORS middleware
 app.use(cors({
-  origin: 'https://timmy-io-smd-creates-projects.vercel.app', // Specify your frontend's URL
+  origin: ['https://timmy-io.vercel.app', 'https://timmy-io-smd-creates-projects.vercel.app'], // Specify your frontend URLs
   methods: ['GET', 'POST'], // Allow specific HTTP methods
   credentials: true // Allow credentials if needed
 }));
