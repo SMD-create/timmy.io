@@ -19,7 +19,7 @@ export class MyComponent {
 
   async componentWillLoad() {
     try {
-      const response = await fetch('http://localhost:5000/api/fetch-conversation'); // Replace with your backend URL
+      const response = await fetch('https://timmy-75linsxnc-my-team-c86339b0.vercel.app/api/fetch-conversation'); // Replace with your backend URL
       if (response.ok) {
         const data = await response.json();
         this.chatMessages = data.chat; // Assuming the response structure is compatible
