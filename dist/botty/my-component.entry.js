@@ -9,7 +9,7 @@ const MyComponent = class {
     }
     async componentWillLoad() {
         try {
-            const response = await fetch('http://localhost:5000/api/fetch-conversation'); // Replace with your backend URL
+            const response = await fetch('http://localhost:5000/api/fetch'); // Replace with your backend URL
             if (response.ok) {
                 const data = await response.json();
                 this.chatMessages = data.chat; // Assuming the response structure is compatible
@@ -23,7 +23,7 @@ const MyComponent = class {
         }
     }
     render() {
-        return (h("div", { key: '3cd78e2c715dc99060b3f992201b2c652f213b0b', class: "chat-container" }, h("div", { key: 'eae7a71807b04bff39cba839a8d7a20bee0f06dc', class: "chat-header" }, "Timmy AI"), h("div", { key: '01d6b1dfd5b52917d43528252b4cd37c41096e71', class: "chat-messages" }, this.chatMessages &&
+        return (h("div", { key: '77c0919d6079b19e9218e7ca053e93584c6cc6bd', class: "chat-container" }, h("div", { key: '58416786228afc28741b7252456d60ba3e519499', class: "chat-header" }, "Timmy AI"), h("div", { key: '47119a97a1b308dc43e9da52945714fe29f406d0', class: "chat-messages" }, this.chatMessages &&
             this.chatMessages.map((msg, index) => {
                 if (msg.type === 'text') {
                     return (h("div", { class: `chat-message ${msg.isAIReply ? 'ai' : 'user'}`, key: index }, msg.content));
