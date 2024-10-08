@@ -58,10 +58,10 @@ export class MyComponent {
               return null; // In case of unrecognized message type
             })}
         </div>
-        <div class="chat-input-container">
+        {/*<div class="chat-input-container">
           <input type="text" class="chat-input" placeholder="Type your message..." />
           <button class="send-button">Send</button>
-        </div>
+        </div>*/}
       </div>
     );
   }
