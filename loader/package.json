@@ -7,8 +7,5 @@
   "jsnext:main": "./index.es2017.js",
   "es2015": "./index.es2017.js",
   "es2017": "./index.es2017.js",
-  "unpkg": "./cdn.js",
-  "dependencies": {
-    "botty-loader": "file:"
-  }
+  "unpkg": "./cdn.js"
 }
