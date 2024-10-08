@@ -33,8 +33,7 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build && npm run build:api",
-    "build:api": "cd api && npm install",
+    "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
@@ -48,14 +47,13 @@
     "jest-cli": "^29.7.0",
     "puppeteer": "^21.9.0"
   },
+  "license": "MIT",
   "dependencies": {
     "botty": "file:",
     "cors": "^2.8.5",
     "express": "^4.21.0",
-    "node-fetch": "^3.3.2",
-    "serverless-http": "^3.2.0"
+    "node-fetch": "^3.3.2"
   },
-  "license": "MIT",
   "keywords": [],
   "author": "",
   "bugs": {
