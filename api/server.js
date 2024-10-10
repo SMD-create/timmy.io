@@ -7,11 +7,9 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-const corsOptions = {
-  origin: 'http://localhost:3333', // Allow localhost development
-  optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: '*', // Allow all domains to access the resource
+}));
 
 // Root route
 app.get('/', (req, res) => {
