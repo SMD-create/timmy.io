@@ -19,7 +19,7 @@ export class MyComponent {
 
   async componentWillLoad() {
     try {
-      const response = await fetch('https://timmy-r5qocc2dx-my-team-c86339b0.vercel.app/api/fetch-conversation'); 
+      const response = await fetch('https://timmy-io-smd-create-smd-creates-projects.vercel.app/api/fetch-conversation'); 
       if (response.ok) {
         const data = await response.json();
         this.chatMessages = data.chat; // Assuming the response structure is compatible

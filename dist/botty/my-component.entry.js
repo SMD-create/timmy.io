@@ -9,7 +9,7 @@ const MyComponent = class {
     }
     async componentWillLoad() {
         try {
-            const response = await fetch('https://timmy-r5qocc2dx-my-team-c86339b0.vercel.app/api/fetch-conversation');
+            const response = await fetch('https://timmy-io-smd-create-smd-creates-projects.vercel.app/api/fetch-conversation');
             if (response.ok) {
                 const data = await response.json();
                 this.chatMessages = data.chat; // Assuming the response structure is compatible
@@ -23,7 +23,7 @@ const MyComponent = class {
         }
     }
     render() {
-        return (h("div", { key: '819a7408d4b907271d2207efbecc206dead30894', class: "chat-container" }, h("div", { key: '70bf14feae3a8b7d3916075722368047e907f629', class: "chat-header" }, "Timmy AI"), h("div", { key: 'f812e014ce73e4da0ee5fb467f046f6e20c315f3', class: "chat-messages" }, this.chatMessages &&
+        return (h("div", { key: '900d832902d246a923f6082786bd41bd92ba4143', class: "chat-container" }, h("div", { key: '361524a81f583cc9b891e50c18758e2760afae26', class: "chat-header" }, "Timmy AI"), h("div", { key: '8830832fdc4fcc3acdb430723e6a9dc3371e566c', class: "chat-messages" }, this.chatMessages &&
             this.chatMessages.map((msg, index) => {
                 if (msg.type === 'text') {
                     return (h("div", { class: `chat-message ${msg.isAIReply ? 'ai' : 'user'}`, key: index }, msg.content));
