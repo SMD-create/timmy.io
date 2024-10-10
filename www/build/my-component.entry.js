@@ -23,7 +23,7 @@ const MyComponent = class {
         }
     }
     render() {
-        return (h("div", { key: 'c2752fc563f986a3c5526480cc20b42a9b0ce23a', class: "chat-container" }, h("div", { key: '9dc4d086dd4a5141a386816223bb3cd1e2914eef', class: "chat-header" }, "Timmy AI"), h("div", { key: '1fc3cb2b725187540bdcca0b27c666aae1999ea4', class: "chat-messages" }, this.chatMessages &&
+        return (h("div", { key: '819a7408d4b907271d2207efbecc206dead30894', class: "chat-container" }, h("div", { key: '70bf14feae3a8b7d3916075722368047e907f629', class: "chat-header" }, "Timmy AI"), h("div", { key: 'f812e014ce73e4da0ee5fb467f046f6e20c315f3', class: "chat-messages" }, this.chatMessages &&
             this.chatMessages.map((msg, index) => {
                 if (msg.type === 'text') {
                     return (h("div", { class: `chat-message ${msg.isAIReply ? 'ai' : 'user'}`, key: index }, msg.content));
